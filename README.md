@@ -46,7 +46,7 @@ flowchart TD
     end
     D --> E[Backend validates token → issues JWT]
     E --> F[Frontend stores JWT]
-    F --> G[API calls (orders, products, ads)]
+    F --> G[API calls]
     G --> H[Laravel Controllers]
     H --> I[Services (ShopifySync, GoogleSync, MetaSync)]
     I --> J[Database (MySQL)]
